@@ -33,8 +33,8 @@ export default function FormLogin() {
     }
 
     return (
-        <div className="w-full p-10 flex items-center justify-center">
-            <form onSubmit={handleLogin} className='w-full lg:w-[35%] h-100 p-10 lg:p-15 shadow-2xl/10 rounded-3xl bg-white border-2 border-[#294D61] flex flex-col items-center justify-center gap-5'>
+        <div className="w-full max-w-150 lg:w-[35%] lg:min-w-150 p-10 flex items-center justify-center">
+            <form onSubmit={handleLogin} className='w-full h-auto p-10 p-15 shadow-2xl/10 rounded-3xl bg-white border-2 border-[#294D61] flex flex-col items-center justify-center gap-5'>
             <h1 className='text-2xl font-semibold'>Entrar</h1>
             <div className="w-full flex flex-col gap-3">
                 <Input label='Email' onChange={(e) => setEmail(e.target.value)} type='Email' placeholder='Digite seu email'/>

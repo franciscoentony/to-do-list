@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function HeaderNav() {
   return (
-    <header className='w-[80%] mt-5'>
+    <header className='w-[80%] lg:w-[40%] lg:min-w-170 mt-5'>
         <div className='py-5 px-6 flex justify-between items-center bg-[#0C7075] shadow-2xl/20 text-white rounded-[1rem]'>
             <Link href={'/'} className="font-semibold flex flex-col items-center leading-none">
                 <p>TO-DO</p>

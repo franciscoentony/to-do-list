@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///Users/franciscoentony/Documents/to-do-list/frontend/app/components/Input.tsx"],"sourcesContent":["\"use client\"\nimport React from 'react';\nimport { useState } from 'react';\n\nconst Input = ({label, type, placeholder}:any) => {\n  return (\n    <div className=\"w-full flex flex-col\">\n      <span className=\"font-sans my-1\">{label}</span>\n      <input placeholder={placeholder} className=\"px-3 w-full bg-[#dfd1d1] p-2 border border-white/10 rounded-md outline-none ring-2 ring-blue-500/0 focus:ring-blue-500\" name=\"text\" type={type} />\n    </div>\n  );\n}\n\nexport default Input;\n"],"names":[],"mappings":";;;;;AAAA;;AAIA,MAAM,QAAQ,CAAC,EAAC,KAAK,EAAE,IAAI,EAAE,WAAW,EAAK;IAC3C,qBACE,2RAAC;QAAI,WAAU;;0BACb,2RAAC;gBAAK,WAAU;0BAAkB;;;;;;0BAClC,2RAAC;gBAAM,aAAa;gBAAa,WAAU;gBAAyH,MAAK;gBAAO,MAAM;;;;;;;;;;;;AAG5L;uCAEe"}}]
+}

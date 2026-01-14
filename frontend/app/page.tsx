@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 
 export default function page() {
   return (
-    <div className='w-full h-screen flex flex-col items-center justify-between'>
+    <div className='w-full h-auto lg:h-auto overflow-hidden flex flex-col items-center justify-between'>
         <HeaderNav/>
         <Presentation/>
         <AboutProject/>

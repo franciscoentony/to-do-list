@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Projeto(models.Model):
     anotacao = models.TextField()
-
     usuario = models.ForeignKey(User, on_delete = models.CASCADE, related_name = 'tarefas', null=True, blank=True)
+    completado = models.BooleanField(default=False)
     def __str__(self):
         return f"{self.anotacao} - {self.usuario}"

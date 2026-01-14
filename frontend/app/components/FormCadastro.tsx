@@ -31,10 +31,10 @@ export default function FormCadastro() {
     }
 
     return (
-        <div className="w-full flex items-center justify-center">
-            <form onSubmit={handleCadastro} className='w-[35%] h-auto p-15 shadow-2xl/10 rounded-3xl bg-white border-2 border-[#294D61] flex flex-col items-center justify-center gap-5'>
+        <div className="w-full max-w-150 lg:w-[35%] lg:min-w-150 p-10 flex items-center justify-center">
+            <form onSubmit={handleCadastro} className='w-full h-auto p-15 shadow-2xl/10 rounded-3xl bg-white border-2 border-[#294D61] flex flex-col items-center justify-center gap-5'>
             <h1 className='text-2xl font-semibold'>Cadastre-se</h1>
-            <div className="flex flex-col gap-3">
+            <div className="w-full flex flex-col gap-3">
                 <Input label='Nome:' onChange={(e) => setEmail(e.target.value)} type='text' placeholder='Digite seu nome completo'/>
                 <Input label='Email' onChange={(e) => setEmail(e.target.value)} type='Email' placeholder='Digite seu email'/>
                 <Input label='Senha' onChange={(e) => setPassword(e.target.value)}  type='password' placeholder='Digite sua senha'/>

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/franciscoentony/Documents/to-do-list/frontend/app/entrar/page.tsx"],"sourcesContent":["import React from 'react'\n\nimport HeaderNav from '../components/HeaderNav'\n\nexport default function page() {\n  return (\n    <div>page</div>\n  )\n}\n"],"names":[],"mappings":";;;;;;AAIe,SAAS;IACtB,qBACE,2RAAC;kBAAI;;;;;;AAET"}}]
+}
