@@ -1,7 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CheckBoxPrincipal = ({checked, onClick}) => {
+interface CheckBoxProps {
+  checked?: boolean; // O '?' significa que é opcional
+  onClick?: () => void; // Uma função que não retorna nada
+}
+
+const CheckBoxPrincipal = ({checked, onClick}: CheckBoxProps) => {
   return (
     <StyledWrapper>
       <div className="checkbox-container">
