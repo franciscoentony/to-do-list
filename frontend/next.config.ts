@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: 'export', // Essencial para criar a pasta 'out'
   distDir: 'out',   // Força o nome da pasta de saída
+  basePath: '/to-do-list',
   images: {
     unoptimized: true, // Obrigatório para o GitHub Pages
   },
