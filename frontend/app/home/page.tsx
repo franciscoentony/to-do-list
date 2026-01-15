@@ -14,7 +14,7 @@ export default function Home() {
 
   async function carregarTarefas() {
     const token = localStorage.getItem("stark_token");
-    const response = await fetch("http://127.0.0.1:8000/api/projetos/", {
+    const response = await fetch("https://to-do-list-api-wxwe.onrender.com/api/projetos/", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
