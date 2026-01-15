@@ -17,7 +17,7 @@ export default function Page() {
         if (!token) return
     
         try {
-          const response = await fetch('http://127.0.0.1:8000/api/token/verify/', {
+          const response = await fetch('https://to-do-list-api-wxwe.onrender.com/api/token/verify/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ token })

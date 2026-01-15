@@ -14,7 +14,7 @@ export default function Task({ carregarTarefas, todos }: any) {
 
   async function handleDelete(id: number) {
     const token = localStorage.getItem("stark_token");
-    const response = await fetch(`http://127.0.0.1:8000/api/projetos/${id}/`, {
+    const response = await fetch(`https://to-do-list-api-wxwe.onrender.com/api/projetos/${id}/`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -29,7 +29,7 @@ export default function Task({ carregarTarefas, todos }: any) {
   
   async function handleSalvar(id: number) {
     const token = localStorage.getItem("stark_token");
-    const response = await fetch(`http://127.0.0.1:8000/api/projetos/${id}/`, {
+    const response = await fetch(`https://to-do-list-api-wxwe.onrender.com/api/projetos/${id}/`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -47,7 +47,7 @@ export default function Task({ carregarTarefas, todos }: any) {
   async function TarefaFeita(id: number, statusAtual: boolean) {
     const token = localStorage.getItem('stark_token');
     
-    const response = await fetch(`http://127.0.0.1:8000/api/projetos/${id}/`, {
+    const response = await fetch(`https://to-do-list-api-wxwe.onrender.com/api/projetos/${id}/`, {
         method: 'PATCH',
         headers: { 
             'Content-Type': 'application/json',

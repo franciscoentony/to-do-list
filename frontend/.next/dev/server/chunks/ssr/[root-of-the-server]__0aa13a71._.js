@@ -185,7 +185,7 @@ function FormCadastro() {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$to$2d$do$2d$list$2f$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     async function handleCadastro(e) {
         e.preventDefault();
-        const response = await fetch('http://127.0.0.1:8000/api/registrar/', {
+        const response = await fetch('https://to-do-list-api-wxwe.onrender.com/api/registrar/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -341,7 +341,7 @@ function Page() {
             const token = localStorage.getItem('stark_token');
             if (!token) return;
             try {
-                const response = await fetch('http://127.0.0.1:8000/api/token/verify/', {
+                const response = await fetch('https://to-do-list-api-wxwe.onrender.com/api/token/verify/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

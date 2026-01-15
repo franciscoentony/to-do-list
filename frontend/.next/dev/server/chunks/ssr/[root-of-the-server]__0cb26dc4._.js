@@ -246,7 +246,7 @@ function Task({ carregarTarefas, todos }) {
     }, []);
     async function handleDelete(id) {
         const token = localStorage.getItem("stark_token");
-        const response = await fetch(`http://127.0.0.1:8000/api/projetos/${id}/`, {
+        const response = await fetch(`https://to-do-list-api-wxwe.onrender.com/api/projetos/${id}/`, {
             method: "DELETE",
             headers: {
                 Authorization: `Bearer ${token}`
@@ -258,7 +258,7 @@ function Task({ carregarTarefas, todos }) {
     }
     async function handleSalvar(id) {
         const token = localStorage.getItem("stark_token");
-        const response = await fetch(`http://127.0.0.1:8000/api/projetos/${id}/`, {
+        const response = await fetch(`https://to-do-list-api-wxwe.onrender.com/api/projetos/${id}/`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
@@ -275,7 +275,7 @@ function Task({ carregarTarefas, todos }) {
     }
     async function TarefaFeita(id, statusAtual) {
         const token = localStorage.getItem('stark_token');
-        const response = await fetch(`http://127.0.0.1:8000/api/projetos/${id}/`, {
+        const response = await fetch(`https://to-do-list-api-wxwe.onrender.com/api/projetos/${id}/`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
@@ -1016,7 +1016,7 @@ function Home() {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$to$2d$do$2d$list$2f$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     async function carregarTarefas() {
         const token = localStorage.getItem("stark_token");
-        const response = await fetch("http://127.0.0.1:8000/api/projetos/", {
+        const response = await fetch("https://to-do-list-api-wxwe.onrender.com/api/projetos/", {
             headers: {
                 Authorization: `Bearer ${token}`
             }

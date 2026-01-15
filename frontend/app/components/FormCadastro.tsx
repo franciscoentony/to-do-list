@@ -12,7 +12,7 @@ export default function FormCadastro() {
   async function handleCadastro(e: React.FormEvent) {
     e.preventDefault();
 
-    const response = await fetch("http://127.0.0.1:8000/api/registrar/", {
+    const response = await fetch("https://to-do-list-api-wxwe.onrender.com/api/registrar/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
