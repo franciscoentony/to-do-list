@@ -468,3 +468,5 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [01:08:29.424] Browser WARN    Image with src "/to-do-list/todo-list.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:24:15.036] Server  LOG     ✓ Compiled in 825ms
+[01:25:08.799] Server  LOG     ✓ Compiled in 543ms
