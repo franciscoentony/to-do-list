@@ -33,10 +33,10 @@ export default function FormLogin() {
   }
 
   return (
-    <div className="w-full max-w-150 lg:w-[35%] lg:min-w-150 p-10 flex items-center justify-center">
+    <div className="w-full max-w-150 h-full lg:mt-0 lg:w-[35%] lg:min-w-150 p-10 flex items-center justify-center">
       <form
         onSubmit={handleLogin}
-        className="w-full h-auto p-10 shadow-2xl/10 rounded-3xl bg-white border-2 border-[#294D61] flex flex-col items-center justify-center gap-5"
+        className="w-full h-auto p-5 lg:p-10 shadow-2xl/10 rounded-3xl bg-white border-2 border-[#294D61] flex flex-col items-center justify-center gap-5"
       >
         <h1 className="text-2xl font-semibold">Entrar</h1>
         <div className="w-full flex flex-col gap-3">

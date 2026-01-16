@@ -6,8 +6,8 @@ import Checkbox from "../../Checkbox";
 
 export default function Presentation() {
   return (
-    <section className="w-full h-auto lg:h-130 lg:p-10 flex justify-center items-center ">
-      <div className="w-[90%] lg:min-w-200 p-10 lg:p-0 lg:w-[40%] h-full lg:h-full relative overflow-hidden lg:overflow-visible justify-center lg:justify-between items-center">
+    <section className="w-full h-auto mt-25 lg:mt-0 lg:h-130 lg:p-10 flex justify-center items-center ">
+      <div className="w-[90%] lg:min-w-200 py-10 px-3 lg:p-0 lg:w-[45%] h-full lg:h-full relative overflow-hidden lg:overflow-visible justify-center lg:justify-between items-center">
         <div className="w-full lg:w-[50%] h-full bg-[#294D61] flex lg:absolute justify-between items-center text-white p-10 rounded-3xl lg:overflow-visible shadow-xl/10">
           <div className="w-auto h-full flex flex-col gap-6 z-20">
             <h1 className="w-full lg:w-full text-3xl font-semibold">
@@ -30,11 +30,11 @@ export default function Presentation() {
         </div>
         <div className="w-full h-full bg-[#0C7075] flex justify-end rounded-3xl">
           <Image
-            src={"/todo-list.svg"}
+            src={"/to-do-list/todo-list.svg"}
             alt="image"
             width={500}
             height={800}
-            className="hidden lg:block  w-[50%]"
+            className="hidden lg:block w-[50%]"
           />
         </div>
       </div>
